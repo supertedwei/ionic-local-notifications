@@ -61,6 +61,7 @@ export class HomePage {
               firstNotificationTime.setHours(firstNotificationTime.getHours() + (24 * (dayDifference)));
               firstNotificationTime.setHours(this.chosenHours);
               firstNotificationTime.setMinutes(this.chosenMinutes);
+              firstNotificationTime.setMilliseconds(0);
   
               let notification = {
                   id: day.dayCode,
